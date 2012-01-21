@@ -1,0 +1,7 @@
+This is a work-in-progress, but what's here is functional enough for testing. 
+I'll add another project to implement the library as an example of how this works.
+
+Currently, this lib takes a network path for an audio stream and will play it as a loop. 
+There are several unimplemented MediaPlayer instances here as well, those will be added
+shortly. The main purpose of this lib is to serve as the sound library for an android 
+game.
