@@ -2,8 +2,10 @@ package com.feigdev.backgroundsound.android;
 
 import java.io.IOException;
 
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
 
 public class SoundHandler {
 	MediaPlayer music;
@@ -23,6 +25,27 @@ public class SoundHandler {
 			music.reset();
 			music.setAudioStreamType(AudioManager.STREAM_MUSIC);
 			music.setDataSource(path);
+			music.setLooping(true);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalStateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void localInit(Context c, Uri file){
+		try {
+			music.reset();
+			music.setAudioStreamType(AudioManager.STREAM_MUSIC);
+			music.setDataSource(c,file);
 			music.setLooping(true);
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
