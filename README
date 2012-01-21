@@ -1,3 +1,4 @@
-This is a work-in-progress, but what's here is functional enough for testing.  I'll add another project to implement the library as an example of how this works.
+This is a working, what's here is functional enough for testing. For an example implementation, take a look at https://github.com/emil10001/SimpleMusicPlayer
 
-Currently, this lib takes a network path for an audio stream and will play it as a loop.  There are several unimplemented MediaPlayer instances here as well, those will be added shortly. The main purpose of this lib is to serve as the sound library for an android game.
+This is intended as a game sound lib. The main track should loop until stopped, and allow for three different sound effects to play.
+
