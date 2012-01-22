@@ -108,18 +108,21 @@ public class SoundHandler {
 				sfx1.setAudioStreamType(AudioManager.STREAM_MUSIC);
 				sfx1.setDataSource(c,file);
 				sfx1.setLooping(false);
+				sfx1.prepare();
 				break;
 			case SFX2:
 				sfx2.reset();
 				sfx2.setAudioStreamType(AudioManager.STREAM_MUSIC);
 				sfx2.setDataSource(c,file);
 				sfx2.setLooping(false);
+				sfx2.prepare();
 				break;
 			case SFX3:
 				sfx3.reset();
 				sfx3.setAudioStreamType(AudioManager.STREAM_MUSIC);
 				sfx3.setDataSource(c,file);
 				sfx3.setLooping(false);
+				sfx3.prepare();
 				break;
 			}
 			
